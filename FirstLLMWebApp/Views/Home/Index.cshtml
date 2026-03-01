@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-action="Ask" method="post">
+    <div>
+        <label for="userMessage">Your Message:</label>
+        <input type="text" id="userMessage" name="userMessage" value="@ViewBag.UserMessage" style="width: 400px;" />
+    </div>
+    <div style="margin-top: 10px;">
+        <button type="submit">Send</button>
+    </div>
+</form>
+
+@if (ViewBag.Response != null)
+{
+    <div style="margin-top: 20px; padding: 10px; border: 1px solid #ccc;">
+        <strong>GPT Response:</strong>
+        <p>@ViewBag.Response</p>
+    </div>
+}
