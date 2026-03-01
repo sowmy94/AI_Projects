@@ -5,7 +5,7 @@
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "OPENAI_API_KEY": "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"
+        "OPENAI_API_KEY": ""
       },
       "dotnetRunMessages": true,
       "applicationUrl": "http://localhost:5215"
